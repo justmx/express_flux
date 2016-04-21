@@ -1,0 +1,25 @@
+mkdir react_Express
+npm init
+npm install -g bower
+bower init
+touch .gitignore
+npm install --save express
+npm install --save ejs
+npm install --g ejs
+npm install --g gulp
+npm install --save gulp gulp-live-server
+npm install --save browser-sync
+npm install --save react react-dom
+bower install --save react
+npm install -g react-tools
+npm install --save reactify browserify
+npm install --save vinyl-source-stream
+npm install -g browserify
+
+
+bower install --save skeleton
+npm install --save jquery
+npm install --save body-parser
+npm install --save mongoose
+
+brew install mongodb

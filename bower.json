@@ -1,0 +1,21 @@
+{
+  "name": "react_express",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Matthew.Ma <matthew.ma@jnsolutions.com.au>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.0.1",
+    "skeleton": "^2.0.4"
+  }
+}
