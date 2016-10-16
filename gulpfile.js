@@ -10,7 +10,7 @@ var concat = require('gulp-concat');
 gulp.task('live-server', function() {
 	var server = new LiveServer('server/main.js');
 	server.start();
-})
+});
 
 
 gulp.task('copy', function() {
@@ -35,5 +35,5 @@ gulp.task('serve', ['bundle','live-server'], function() {
 	browserSync.init(null, {
 		proxy: "http://localhost:7777",
 		port: 9001
-	})
-})
+	});
+});

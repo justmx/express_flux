@@ -6,7 +6,7 @@
 			.get(function(req, res) {
 				GroceryItem.find(function(error, doc) {
 					res.send(doc);
-				})
+				});
 			})
 			.post(function(req, res) {
 				var item = req.body;
@@ -14,9 +14,8 @@
 				var groceryItem = new GroceryItem(item);
 				groceryItem.save(function(err, data) {
 					res.status(201).send(data);
-				})
-
-			})
+				});
+			});
 
 		app.route('/api/items/:id')
 			.delete(function(req, res) {
@@ -34,7 +33,7 @@
 					console.log('error:' + error);
 					console.log('reqbody:' + JSON.stringify(req.body));
 
-					if (doc != null) {
+					if (doc !== null) {
 						for (var key in req.body) {
 							//                    if (doc[key])
 							//                    {
@@ -45,6 +44,6 @@
 						doc.save();
 					}
 					res.status(200).send();
-				})
-			})
-	}
+				});
+			});
+	};
